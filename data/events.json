@@ -1,0 +1,58 @@
+[
+  {
+    "op": "calibration_add",
+    "records": [
+      "north0",
+      "north1",
+      "north2",
+      "north3",
+      "south0",
+      "south1",
+      "south2",
+      "south3"
+    ]
+  },
+  {
+    "op": "seal",
+    "sites": [
+      "north",
+      "south"
+    ]
+  },
+  {
+    "op": "register_descriptor",
+    "query": "query0",
+    "descriptor": "d0"
+  },
+  {
+    "op": "normalize",
+    "query": "near-repeat",
+    "joint_reference": true
+  },
+  {
+    "op": "withdraw_record",
+    "record": "north0"
+  },
+  {
+    "op": "seal",
+    "sites": [
+      "north"
+    ]
+  },
+  {
+    "op": "compare",
+    "descriptors": [
+      "d0"
+    ],
+    "query": "near-repeat",
+    "mode": "same-reference-tangent"
+  },
+  {
+    "op": "train",
+    "joint_reference": true
+  },
+  {
+    "op": "normalize",
+    "query": "ill-conditioned"
+  }
+]
